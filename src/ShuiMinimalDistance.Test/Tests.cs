@@ -16,8 +16,8 @@ namespace ShuiMinimalDistance.Test
             int source2 = 1;
             int destination2 = 8;
 
-            double result1 = Program.FindMinDistanceToVertice(graph, source1, destination1);
-            double result2 = Program.FindMinDistanceToVertice(graph, source2, destination2);
+            double result1 = Program.FindMinDistanceToVertex(graph, source1, destination1);
+            double result2 = Program.FindMinDistanceToVertex(graph, source2, destination2);
 
             double expected1 = 4.81;
             double expected2 = 3.27;

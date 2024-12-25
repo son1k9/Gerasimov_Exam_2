@@ -41,7 +41,7 @@ namespace ShuiMinimalDistance
                 Console.WriteLine();
             }
 
-            var result = FindMinDistanceToVertice(Graph, source - 1, destination - 1);
+            var result = FindMinDistanceToVertex(Graph, source - 1, destination - 1);
 
             Console.WriteLine($"Кратчайшее расстояние из пункта {source} в пункт {destination}: {result:0.00} км");
             Console.WriteLine("Нажмите Enter для завершения программы");
@@ -54,7 +54,7 @@ namespace ShuiMinimalDistance
             var isInputDestinationValid = int.TryParse(inputDestination, out destination) && (destination >= 1 && destination <= 10);
             return isInputSourceValid && isInputDestinationValid;
         }
-        public static double FindMinDistanceToVertice(double[,] graph, int source, int destination)
+        public static double FindMinDistanceToVertex(double[,] graph, int source, int destination)
         {
             var distances = Dijkstra(graph, source);
             return distances[destination];
